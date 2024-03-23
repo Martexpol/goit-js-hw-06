@@ -8,8 +8,8 @@ const ingredients = [
 ];
 
 for (ingredient of ingredients) {
-  const ingredient = document.createElement("li");
-  ingredient.textContent = `${ingredient}`;
-  ingredient.className = "item";
-  ingredients.apend(ingredient);
+  const li = document.createElement("li");
+  li.textContent = `${ingredient}`;
+  li.className = "item";
+  ingredients.apend(li);
 }
