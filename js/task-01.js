@@ -9,7 +9,7 @@
 // Category: Technologies
 // Elements: 5
 
-
+console.log("wtf??");
 const categoriesList = document.querySelectorAll(".item");
 
 // Liczba kategorii
