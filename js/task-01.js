@@ -10,7 +10,7 @@
 // Elements: 5
 
 // Znajdź wszystkie elementy li.item w ul#categories
-const categoriesList = document.querySelectorAll('#categories').getElementsByTagName('li');
+const categoriesList = document.querySelectorAll('.item');
 
 // Liczba kategorii
 const categoryCount = categoriesList.length;
