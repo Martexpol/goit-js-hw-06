@@ -9,8 +9,8 @@
 // Category: Technologies
 // Elements: 5
 
-// Znajdź wszystkie elementy li.item w ul#categories
-const categoriesList = document.querySelectorAll('.item');
+
+const categoriesList = document.querySelectorAll(".item");
 
 // Liczba kategorii
 const categoryCount = categoriesList.length;
