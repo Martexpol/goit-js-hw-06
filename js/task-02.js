@@ -10,9 +10,9 @@ const ingredients = [
 // const ingredientsList = document.querySelector("ul");
 const ingredientsList = document.getElementById('ingredients');
 
-ingredients.forEach(ingredient => {
+ingredients.forEach(element => {
   const listItem = document.createElement("li");
-  listItem.innerText = `${ingredient}`;
+  listItem.innerText = `${element}`;
   listItem.className = "item";
-  ingredients.apend(listItem);
+  ingredientsList.apend(listItem);
 });
