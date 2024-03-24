@@ -14,5 +14,5 @@ ingredients.forEach(element => {
   const listItem = document.createElement("li");
   listItem.innerText = `${element}`;
   listItem.className = "item";
-  ingredientsList.apend(listItem);
+  ingredientsList.insertAdjacentElement("beforeend", listItem);
 });
