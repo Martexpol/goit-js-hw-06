@@ -7,25 +7,35 @@ function getRandomHexColor() {
 const createButton = document.querySelector('button[data-create]');
 const destroyButton = document.querySelector('button[data-destroy]');
 const input = document.querySelector('input[type="number"]');
+const boxesDiv = document.getElementById('boxes');
+// const createdDivs = boxesDiv.getElementsByTagName('div').length;
+
 
 function createBoxes (amount) {
-  const boxesDiv = document.getElementById('boxes');
-    boxesDiv.innerHTML = '';
-
-    let boxSize = 30;
-    for(i=0; i < amount; i++) {
+  let boxSize = 30;
+    for(let i = 0; i < amount; i++) {
       const box = document.createElement('div');
+      
       box.style.width = boxSize + "px";
       box.style.height = boxSize + "px";
       box.style.backgroundColor = getRandomHexColor();
-      // boxesDiv.appendChild(box);
+      box.id = "box";
+      boxesDiv.appendChild(box);
       boxSize = boxSize + 10;
-    }
+     }
+    
 }
 
 createButton.addEventListener("click", provideAmount);
-function provideAmount(input) {
+function provideAmount() {
   const amount = +input.value;
-  console.log(amount);
   createBoxes(amount);
 }
+
+function destroyBoxes() {
+  boxesDiv.innerHTML = '';
+}
+
+destroyButton.addEventListener('click', function() {
+  destroyBoxes();
+});
