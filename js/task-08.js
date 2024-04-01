@@ -19,8 +19,7 @@ function handleSubmit(event) {
             password: passwordInput.value
           };
         console.log(elements);
+        loginForm.reset();
     }
-        
-    loginForm.reset();
 
-}
+  }

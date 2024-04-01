@@ -7,7 +7,7 @@ const ingredients = [
   'Condiments',
 ];
 
-// const ingredientsList = document.querySelector("ul");
+// Wersja 1 - pętla
 const ingredientsList = document.getElementById('ingredients');
 
 ingredients.forEach(element => {
@@ -16,3 +16,8 @@ ingredients.forEach(element => {
   listItem.className = "item";
   ingredientsList.insertAdjacentElement("beforeend", listItem);
 });
+
+// Wersja 2 - wszystko naraz
+// const ingredientsList = document.getElementById('ingredients');
+
+
